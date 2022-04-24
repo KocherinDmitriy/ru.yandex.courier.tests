@@ -1,4 +1,5 @@
-// импортируем RestAssured
+package api;// импортируем RestAssured
+
 import io.restassured.RestAssured;
 // импортируем Response
 import io.restassured.response.Response;
@@ -16,7 +17,7 @@ public class ScooterRegisterCourier {
     возвращает список из логина и пароля
     если регистрация не удалась, возвращает пустой список
     */
-    public ArrayList<String> registerNewCourierAndReturnLoginPassword(){
+    public ArrayList<String> registerNewCourierAndReturnLoginPassword() {
 
         // с помощью библиотеки RandomStringUtils генерируем логин
         // метод randomAlphabetic генерирует строку, состоящую только из букв, в качестве параметра передаём длину строки
@@ -35,7 +36,7 @@ public class ScooterRegisterCourier {
                 + "\"firstName\":\"" + courierFirstName + "\"}";
 
         // отправляем запрос на регистрацию курьера и сохраняем ответ в переменную response класса Response
-        Response response =  given()
+        Response response = given()
                 .header("Content-type", "application/json")
                 .and()
                 .body(registerRequestBody)
