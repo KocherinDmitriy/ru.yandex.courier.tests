@@ -32,7 +32,7 @@ public class CourerClient {
         response.then().assertThat().body(field, equalTo(message));
     }
 
-    // метод для шага "Сравнить ответ от сервера" с булевым ответом:
+    //метод для шага "Сравнить ответ от сервера" с булевым ответом:
     @Step("Compare answer to server")
     public static void compareResponseWithBollean(Response response, String field, Boolean message) {
         response.then().assertThat().body(field, equalTo(message));

@@ -10,5 +10,6 @@ public class LoginCourierTest {
         response.then().assertThat().body("id", notNullValue()).and()
                 .statusCode(200);
     }
+
 }
 

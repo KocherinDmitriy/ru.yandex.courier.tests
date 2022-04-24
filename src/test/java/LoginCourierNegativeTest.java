@@ -26,7 +26,7 @@ public class LoginCourierNegativeTest {
     @Parameterized.Parameters (name = "{index} => login={0}, password={1}, field={2},message={3},code={4}") // добавили аннотацию
     public static Object[][] getData() {
         return new Object[][]{
-                {"", "aasdad", "message", "Недостаточно данных для входа", 400},
+                {"", "aasdad1", "message", "Недостаточно данных для входа", 400},
                 {"aasdad", "", "message", "Недостаточно данных для входа", 400},
                 {"123124544", "asdasd", "message", "Учетная запись не найдена", 404},
 

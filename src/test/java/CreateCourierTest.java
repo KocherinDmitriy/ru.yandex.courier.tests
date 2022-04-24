@@ -17,7 +17,6 @@ public class CreateCourierTest {
         response.then().statusCode(201);
 
     }
-
 }
 
 

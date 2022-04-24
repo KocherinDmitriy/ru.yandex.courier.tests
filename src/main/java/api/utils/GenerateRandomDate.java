@@ -3,7 +3,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class GenerateRandomDate {
-    //Генерация даты
+    // Генерация даты
     public static String generateRandomDate() {
         long time = System.currentTimeMillis();
         Date dat = new Date(time);

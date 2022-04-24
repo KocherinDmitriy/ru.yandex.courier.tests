@@ -15,7 +15,7 @@ public class OrderClient {
                 .get("https://qa-scooter.praktikum-services.ru/api/v1/orders");
         return response;
     }
-    @Step("Send POST request to /api/v1/orders")
+    @Step("Send POST request to /api/v1/orders ")
     public static Response sendPostRequestCreateCourier(Integer metroStation, String color) {
         String firstName = RandomStringUtils.randomAlphabetic(10);
         String lastName = RandomStringUtils.randomAlphabetic(10);

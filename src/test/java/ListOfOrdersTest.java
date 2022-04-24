@@ -11,6 +11,5 @@ public class ListOfOrdersTest {
         response.then().assertThat().body("orders", notNullValue()).and()
                 .statusCode(200);
     }
-
 }
 
